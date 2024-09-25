@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "webscraping"
+version = "0.1.0"
+description = ""
+authors = ["Tran Nhan"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12.6"
+logging = "^0.4.9.6"
+scrapy = "^2.11.0"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+pytest = "^7.4.4"
+pandas = "^2.1.4"
+pymongo = "^4.9.1"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.27.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
