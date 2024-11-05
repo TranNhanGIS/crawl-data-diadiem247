@@ -15,3 +15,7 @@ Dockerfile
 *.log
 *.csv
 *.tmp
+*.txt
+
+# Example folder
+/spider/

@@ -8,13 +8,17 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12.6"
-logging = "^0.4.9.6"
 scrapy = "^2.11.0"
 requests = "^2.31.0"
 python-dotenv = "^1.0.0"
 pytest = "^7.4.4"
-pandas = "^2.1.4"
 pymongo = "^4.9.1"
+pylint = "^3.3.1"
+black = "^24.10.0"
+playwright = "^1.47.0"
+scrapy-playwright = "^0.0.41"
+scrapy-rotating-proxies = "^0.6.2"
+pandas = "^2.2.3"
 
 [tool.poetry.group.dev.dependencies]
 ipython = "^8.27.0"
@@ -22,3 +26,11 @@ ipython = "^8.27.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '\.git|\.hg|\.mypy_cache|\.tox|\.venv|build|dist'
+skip-string-normalization = true
+skip-magic-trailing-comma = true
